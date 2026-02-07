@@ -103,7 +103,6 @@ P.L.U.R. is the core philosophy behind the venue finder:
 ### Data Processing
 - CSV data loading and processing
 - JSON serialization for results storage
-- Web scraping for venue metadata
 
 ---
 
@@ -115,7 +114,7 @@ P.L.U.R. is the core philosophy behind the venue finder:
 
 ### Step 1: Clone/Download the Project
 ```bash
-cd c:\Users\kaiaa\OneDrive\Desktop\Personal_Projects
+cd c:\Users\kaiaa\OneDrive\Desktop\Tartanhacks2026
 ```
 
 ### Step 2: Install Dependencies
@@ -189,30 +188,29 @@ The application will start on `http://127.0.0.1:5000`
 ## 📁 Project Structure
 
 ```
-c:\Users\kaiaa\OneDrive\Desktop\Personal_Projects\
+c:\Users\kaiaa\OneDrive\Desktop\Tartanhacks2026\
 ├── app.py                          # Main Flask application
+├── plur_pgh.py                     # Original CLI version
 ├── plurpgh.csv                     # Venue database (200+ venues)
 ├── requirements.txt                # Python dependencies
 ├── README.md                       # This file
 ├── app.db                          # SQLite database (created on first run)
-├── templates/                      # HTML templates
-│   ├── home.html                  # Landing page
-│   ├── register.html              # Registration page
-│   ├── login.html                 # Login page
-│   ├── quiz.html                  # Preference form
-│   ├── results.html               # Matched venues display
-│   ├── dashboard.html             # User search history
-│   ├── posts.html                 # Community posts feed
-│   ├── new_post.html              # Create new post
-│   ├── post_detail.html           # View post with comments
-│   ├── chat.html                  # Community chat
-│   └── about.html                 # Project information & map
-├── __pycache__/                   # Python cache (auto-generated)
-└── Archive/                       # Previous versions and test files
-    ├── plur_pgh.py               # Original CLI version
-    ├── test_scoring.py           # Scoring tests
-    ├── venue_finder_launcher.py  # GUI launcher
-    └── Kaggle_Repo_Uber/         # Additional data resources
+├── test_flow.py                    # Main application flow testing
+├── test_posts_chat.py              # Community features testing
+├── test_scoring.py                 # Scoring algorithm validation
+├── venue_finder_launcher.py        # GUI launcher (Tkinter version)
+└── templates/                      # HTML templates
+    ├── home.html                  # Landing page
+    ├── register.html              # Registration page
+    ├── login.html                 # Login page
+    ├── quiz.html                  # Preference form
+    ├── results.html               # Matched venues display
+    ├── dashboard.html             # User search history
+    ├── posts.html                 # Community posts feed
+    ├── new_post.html              # Create new post
+    ├── post_detail.html           # View post with comments
+    ├── chat.html                  # Community chat
+    └── about.html                 # Project information & map
 ```
 
 ---
@@ -388,7 +386,7 @@ For production, set `debug=False`.
 Test files are included in the project:
 - `test_flow.py` - Main application flow testing
 - `test_posts_chat.py` - Community features testing
-- `Archive/test_scoring.py` - Scoring algorithm validation
+- `test_scoring.py` - Scoring algorithm validation
 
 Run tests:
 ```bash
